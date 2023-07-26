@@ -1,9 +1,9 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
 
 const db = require("./db/models/index");
 const { users } = db;
-
 const UserController = require("./controllers/UserController");
 const UserRouter = require("./routers/UserRouter");
 
